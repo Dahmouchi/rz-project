@@ -13,8 +13,8 @@ export function Hero() {
           }}
         >
           <div className="bg-yellow-800/40 absolute w-full h-full rounded-2xl "></div>
-          <div className="lg:w-1/2 z-20 px-4">
-            <h1 className="lg:text-7xl font-semibold text-4xl text-center text-white">
+          <div className="lg:w-1/2 z-10 px-4">
+            <h1 className="lg:text-7xl font-semibold text-4xl text-center text-white ">
               Empowering Hospitality Success
             </h1>
             <h1 className="lg:text-lg text-sm text-center text-slate-200 mt-2">

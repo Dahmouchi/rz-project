@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 interface NavigationItem {
@@ -28,32 +27,34 @@ const Data = () => {
           <div className="space-y-1 px-5 pt-2 pb-3">
             {links.map((item:any) => (
               <div key={item.name}>
-                <Link
-                  href={item.href || "#"}
-                  className={`text-slate-700 hover:bg-gray-200 uppercase hover:text-slate-900 block p-2 rounded-md text-base font-medium ${path === item.href && "text-main bg-gray-2 rounded-none font-bold"}`}
+                <div
+                 onClick={() => {
+                  const section = document.querySelector(item.href);
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }}}
+                  
+                  className={`text-slate-700 hover:bg-gray-200 dark:text-white text-center uppercase hover:text-slate-900 block p-2 rounded-md text-base font-medium ${path === item.href && "text-main bg-gray-2 rounded-none font-bold"}`}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </Link>
+                </div>
 
-                {/* Render submenu if it exists */}
-                {item.submenu && (
-                  <div className="ml-4">
-                    {item.submenu.map((subItem:any) => (
-                      <Link
-                        key={subItem.name}
-                        href={subItem.href || "#"}
-                        className={`text-slate-700 hover:bg-gray-200 hover:text-slate-900 block p-2 rounded-md text-base font-medium ${path === subItem.href && "text-slate-700 bg-gray-2 font-bold"}`}
-                        aria-current={subItem.current ? "page" : undefined}
-                      >
-                        - {subItem.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
+                
               </div>
             ))}
-            
+            <div className="flex items-center justify-center py-4">
+            <button
+             onClick={() => {
+              const section = document.querySelector("#contact");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className="before:ease p-2 px-6 text-main dark:text-white dark:border-slate-200 rounded-full relative  overflow-hidden border-2 bg-white dark:bg-dark border-main shadow-2xl before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-main before:transition-all before:duration-300 hover:text-white hover:shadow-main2 hover:before:-rotate-180">
+              <p className=" relative z-10 text-lg"> Contact Us</p>
+            </button>
+            </div>
           </div>
         </div>
       </div>

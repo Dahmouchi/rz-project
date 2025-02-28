@@ -65,28 +65,28 @@ const services = [
 ];
 const sections = [
   {
-    title: "Hotels",
+    title: "🏨 Hotels",
     description:
-      "We offer tailored management solutions to optimize hotel operations and enhance guest experiences.",
+      "At *RZ Hospitality, we help hotels **maximize revenue and enhance guest experiences*. Our strategies focus on optimizing pricing, improving operational efficiency, and elevating customer service standards. We provide tailored staff training programs, boost brand visibility, and foster guest loyalty to ensure your hotel thrives in a competitive market.",
   },
   {
-    title: "Restaurants",
+    title: "🍽 Restaurants",
     description:
-      "We offer strategic solutions to refine service and drive profitability. We help design cost-effective, high-impact menus, optimize kitchen workflows, and improve service delivery. Our branding and marketing strategies increase your restaurant’s visibility, while cost control measures enhance profitability and sustainability",
+      "For restaurants, we offer *strategic solutions to refine service and drive profitability*. We help design cost-effective, high-impact menus, optimize kitchen workflows, and improve service delivery. Our branding and marketing strategies increase your restaurant’s visibility, while cost control measures enhance profitability and sustainability.",
   },
   {
-    title: "Bars",
+    title: "🍸 Bars",
     description:
-      "Our expert strategies help bars elevate customer experiences and maximize revenue.",
+      "At *RZ Hospitality, we work with bars to **create engaging, profitable nightlife experiences*. We help craft unique beverage programs, optimize bar operations for efficiency, and implement dynamic pricing strategies to increase revenue. Our services also include ensuring compliance with safety and licensing standards, creating memorable atmospheres that draw customers in. ",
   },
   {
-    title: "Coffeeshops",
+    title: "☕ Coffeeshops",
     description:
-      "We provide branding, menu optimization, and operational efficiency solutions for coffeeshops.",
+      "For coffeeshops, we focus on *improving operational efficiency and building brand loyalty*. We streamline ordering processes, reduce wait times, and design inviting atmospheres that keep customers returning. Our team helps strengthen your brand identity, create specialty menu offerings, and implement eco-friendly practices to enhance both customer experience and profitability.",
   },
 ];
 const Services = () => {
-  const [activeSection, setActiveSection] = useState<any>("Hotels");
+  const [activeSection, setActiveSection] = useState<any>("🏨 Hotels");
 
   return (
     <div id="our-services">
@@ -114,8 +114,8 @@ const Services = () => {
           }}
           className="w-full"
         >
-          <div className="lg:w-32 w-10 h-full bg-gradient-to-r from-transparent to-white dark:to-dark absolute right-0 z-30"></div>
-          <div className="lg:w-32 w-10 h-full bg-gradient-to-l absolute from-transparent to-white dark:to-dark  left-0 z-30"></div>
+          <div className="lg:w-32 w-10 h-full bg-gradient-to-r from-transparent to-white dark:to-dark absolute right-0 z-10"></div>
+          <div className="lg:w-32 w-10 h-full bg-gradient-to-l absolute from-transparent to-white dark:to-dark  left-0 z-10"></div>
           <CarouselContent className="relative">
             {services.map((service, index) => (
               <CarouselItem
@@ -137,8 +137,8 @@ const Services = () => {
             ))}
           </CarouselContent>
           <div className="w-full flex items-center justify-between px-10 mt-8 ">
-            <CarouselPrevious className="bg-second z-40" />
-            <CarouselNext className="bg-second z-40" />
+            <CarouselPrevious className="bg-second z-10" />
+            <CarouselNext className="bg-second z-10" />
           </div>
         </Carousel>
       </div>

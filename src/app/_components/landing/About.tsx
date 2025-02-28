@@ -18,7 +18,11 @@ const About = () => {
         }}
       >
         <div>
-          <h1 className="text-lg"> About us</h1>
+        <div className="flex gap-2 items-center">
+            <div className="w-3 h-3 rounded-full bg-second"></div>
+            <h1 className="text-lg"> About us</h1>
+        </div>
+          
           <div className="w-full h-[2px] bg-white lg:my-4 my-2"></div>
         </div>
         <div className="flex lg:flex-row flex-col lg:items-center lg:justify-between">
