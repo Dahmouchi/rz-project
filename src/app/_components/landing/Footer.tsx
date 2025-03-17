@@ -23,7 +23,7 @@ const Footer = () => {
             Subscribe today and let&apos;s shape the future of
             hospitality together
           </h1>
-          <div className="flex gap-2 items-center  w-full">
+          <div className="flex gap-2 items-center lg:flex-row flex-col  w-full">
             <input
               type="text"
               placeholder="Your e-mail..."

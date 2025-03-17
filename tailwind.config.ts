@@ -10,7 +10,7 @@ export default {
   theme: {
   	extend: {
   		colors: {
-			main:"#064E3B",
+			main:"#48a0a9",
 			second:"#F2B737",
 			dark:"#202020",
   			background: 'hsl(var(--background))',
