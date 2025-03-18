@@ -116,6 +116,11 @@ const Services = () => {
       </div>
       <div className="py-8 lg:mt-10 mt-4 relative">
         <Carousel
+         plugins={[
+          Autoplay({
+            delay: 3500,
+          }),
+        ]}
           opts={{
             align: "center",
           }}
