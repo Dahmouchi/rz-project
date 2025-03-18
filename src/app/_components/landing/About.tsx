@@ -28,37 +28,60 @@ const About = () => {
         </div>
         <div className="flex lg:flex-row flex-col lg:items-center lg:justify-between">
           <div className="flex flex-col lg:gap-8 gap-6 lg:w-1/2 lg:text-lg text-sm">
-
             <h1 className="text-second lg:text-5xl text-3xl">
+              <span className="bg-gradient-to-r from-main3 to-gray-500 inline-block text-transparent bg-clip-text mr-2">
+                At{" "}
+              </span>
+              <span className="bg-gradient-to-r from-text2 via-text to-text2 inline-block text-transparent bg-clip-text">
+                {" "}
+                RZ Hospitality,
+              </span>{" "}
+            </h1>
+            <h1>
+              <span className="font-bold mr-2">Who We Are :</span> We&apos;re
+              not your typical consultants. We&apos;re architects of
+              possibility, partners in progress, and relentless problem-solvers.
+              Whether you&pos;re a boutique hotel, a buzzing brunch spot, or a
+              neighborhood bar, we craft tailored solutions that blend
+              creativity with razor-sharp commercial savvy.
+            </h1>
 
-              <span className="bg-gradient-to-r from-main3 to-gray-500 inline-block text-transparent bg-clip-text mr-2">At </span><span className="bg-gradient-to-r from-text2 via-text to-text2 inline-block text-transparent bg-clip-text"> RZ Hospitality,</span>{" "}
+            <h1 className="whitespace-pre-line">
+              <span className="font-bold mr-2">What We Deliver :</span>
+              Revenue Revolution: Unlock hidden profits with dynamic pricing,
+              market-smart positioning, and guest-centric upselling.
+              <br />
+              - Operational Alchemy: Streamline workflows, slash costs, and
+              integrate tech that works harder so your team doesn&apos;t have
+              to.
+              <br />
+              - Talent That Thrives: Build teams that embody your brand&apos;s
+              soul—through recruitment, training, and retention strategies that
+              stick.
+              <br />- Future-Ready Strategy: Anticipate trends, pivot fast, and
+              stay ahead in an industry that never sleeps.
+            </h1>
 
+            <h1 className="whitespace-pre-line">
+              <span className="font-bold mr-2">Why We&apos;re Different :</span>
+              Decades of Grit, Not Just Theory: We&apos;ve walked in your
+              shoes—crises, grand openings, rebrands—and we know what works.
+              <br />
+              Global Expertise, Local Heart: Our network spans industry leaders
+              worldwide, but our solutions are laser-focused on your community.
+              <br />
+              No Fluff, All Action: We skip the jargon and deliver clear,
+              measurable results—higher profits, happier guests, smoother
+              operations.
+              
             </h1>
+
             <h1>
-              we are devoted to elevating hospitality businesses through expert
-              guidance, strategic innovation, and operational excellence.
-              Founded in 2023 by Ryda Zarhouni, our firm brings together a
-              wealth of industry expertise, offering bespoke consulting
-              solutions that empower hospitality professionals to navigate
-              challenges and seize opportunities with confidence.
+              💡Ready to rewrite your story?{" "}
+              <span className="font-bold mr-2">Let&apos;s start today</span>
             </h1>
-            <h1>
-              With over a decade of experience, we specialize in commercial
-              strategy, operational management, recruitment, and strategic
-              planning, ensuring that every aspect of your business is
-              meticulously optimized for success. Our extensive network of
-              seasoned hospitality professionals enables us to deliver tailored
-              solutions that enhance efficiency, profitability, and guest
-              satisfaction.
-            </h1>
-            <h1>
-              We believe that hospitality is more than a business—it is an art,
-              a seamless fusion of service, experience, and excellence. Whether
-              you seek to refine your operations, elevate your brand, or build a
-              high-performing team, RZ Hospitality is your trusted partner in
-              achieving enduring success.
-            </h1>
-            <h1>💡 Let&apos;s shape the future of hospitality together.</h1>
+            <span className="font-bold mr-2">RZ Hospitality: Where Vision Meets Mastery.</span>
+
           </div>
           <div>
             <div className="max-w-4xl mx-auto grid lg:grid-cols-1 md:grid-cols-2 grid-cols-2 lg:gap-12 gap-3 lg:px-6 my-8">

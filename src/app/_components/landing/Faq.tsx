@@ -51,9 +51,15 @@ const Faq = () => {
           <h1 className="lg:text-5xl text-2xl bg-gradient-to-r from-main3 to-gray-500 inline-block text-transparent bg-clip-text lg:w-2/3">
             Answers to the frequently asked questions.
           </h1>
-          <button className="bg-gradient-to-r from-text2 text-white via-text to-text2 hidden lg:block text-xl my-8 lg:w-2/6 font-semibold  px-8 py-2 rounded-full ">
+          <div
+           onClick={() => {
+            const section = document.querySelector("#contact");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          }} className="bg-gradient-to-r text-center cursor-pointer from-text2 text-white via-text to-text2 hidden lg:block text-xl my-8 lg:w-2/6 font-semibold  px-8 py-2 rounded-full ">
             <div>Get in touch</div>
-          </button>
+          </div>
         </div>
         <div className="space-y-4 mt-4">
           {faqs.map((faq, index) => (

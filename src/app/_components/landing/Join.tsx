@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 
 const Join = () => {
@@ -8,9 +9,18 @@ const Join = () => {
           <h1 className="lg:text-7xl text-3xl">
             Elevating Hospitality Excellence: Our Commitment to Your Success
           </h1>
-          <button className="bg-gradient-to-r from-text2 via-text to-text2 text-xl my-8 font-semibold text-white  px-8 py-2 rounded-full ">
+          <div className="flex items-center justify-center">
+          <div
+           onClick={() => {
+            const section = document.querySelector("#contact");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+           className="bg-gradient-to-r cursor-pointer from-text2 via-text to-text2 text-xl my-8 font-semibold text-white  px-8 py-2 rounded-full ">
             <div>Get in touch</div>
-          </button>
+          </div>
+          </div>
         </div>
       </div>
       <div className=" w-full flex items-center lg:justify-end justify-center lg:p-0 p-2">
@@ -28,9 +38,16 @@ const Join = () => {
             </div>
             
             <h1 className="text-slate-200 text-lg ">At RZ Hospitality, we are more than just consultants—we are your strategic partner</h1>
-            <button className="bg-gradient-to-r from-text2 via-text to-text2 text-white text-xl my-8 font-semibold  px-8 py-2 rounded-full ">
+            <div
+             onClick={() => {
+              const section = document.querySelector("#contact");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className="bg-gradient-to-r from-text2 via-text to-text2 text-white text-xl my-8 font-semibold  px-8 py-2 rounded-full ">
             <div>Get in touch</div>
-          </button>
+          </div>
           </div>
          
         </div>

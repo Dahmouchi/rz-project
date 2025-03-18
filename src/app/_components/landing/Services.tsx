@@ -79,23 +79,85 @@ const sections = [
   {
     title: "🏨 Hotels",
     description:
-      "At *RZ Hospitality, we help hotels **maximize revenue and enhance guest experiences*. Our strategies focus on optimizing pricing, improving operational efficiency, and elevating customer service standards. We provide tailored staff training programs, boost brand visibility, and foster guest loyalty to ensure your hotel thrives in a competitive market.",
+      "At RZ Hospitality, we work hands-on with hotels of all sizes and styles—from luxury resorts to boutique properties, city hotels to budget accommodations. Our practical, results-driven approach ensures your operations run smoothly, your guests leave satisfied, and your bottom line grows.\n\n\n" +
+      
+      "Here’s how we deliver for every hotel type:\n\n" +
+      "- Revenue Optimization: Dynamic pricing strategies, upselling techniques, and occupancy management tailored to your market.\n" +
+      "- Operational Efficiency: Streamline workflows, reduce costs, and modernize systems—whether it’s front-desk processes, housekeeping, or inventory management.\n" +
+      "- Guest Experience Upgrades: Train staff in personalized service, implement tech solutions like mobile check-ins, and design loyalty programs that keep guests returning.\n" +
+      "- Customized Solutions: No two hotels are alike. We adapt to your unique needs, whether you’re a historic inn, a corporate chain, or a beachfront resort.\n" +
+      "- Crisis Support: Immediate action plans for staffing shortages, seasonal slumps, or unexpected challenges.\n\n\n" +
+  
+      "Why hotels trust us:\n\n" +
+      "- Proven Results: We’ve boosted revenue, ratings, and efficiency for properties worldwide.\n" +
+      "- Scalable Strategies: Solutions that work for 10-room boutiques or 500-room complexes.\n" +
+      "- 24/7 Partnership: We’re in the trenches with you—no task is too big or small.\n\n\n" +
+  
+      "Let’s roll up our sleeves and transform your hotel into a well-oiled, guest-loved, profit-driving machine. Ready to get started?"
   },
   {
-    title: "🍽 Restaurants",
+    title: "🍽️ Restaurants",
     description:
-      "For restaurants, we offer *strategic solutions to refine service and drive profitability*. We help design cost-effective, high-impact menus, optimize kitchen workflows, and improve service delivery. Our branding and marketing strategies increase your restaurant’s visibility, while cost control measures enhance profitability and sustainability.",
-  },
+      "At RZ Hospitality, we work side-by-side with restaurants of all types—from cozy bistros and family diners to high-end eateries and global franchises. Our hands-on approach focuses on turning challenges into opportunities, refining every detail to boost profitability, streamline operations, and create unforgettable dining experiences.\n\n\n" +
+  
+      "Here’s how we elevate your restaurant:\n\n" +
+      "- Menu Engineering: Design cost-effective, crave-worthy menus that balance creativity with profitability, using seasonal ingredients and data-driven trends.\n" +
+      "- Kitchen Optimization: Overhaul workflows, reduce waste, and upgrade equipment to speed up service without sacrificing quality.\n" +
+      "- Staff Training: Sharpen front-of-house hospitality and back-of-house efficiency with workshops in service excellence, culinary techniques, and crisis management.\n" +
+      "- Branding & Marketing: Craft a unique identity—from social media campaigns to local partnerships—that attracts foodies and builds loyalty.\n" +
+      "- Cost Control: Negotiate supplier deals, optimize inventory, and implement tech like smart POS systems to tighten margins.\n" +
+      "- Guest Retention: Launch loyalty programs, themed nights, or chef’s tables to turn first-time visitors into regulars.\n" +
+      "- Sustainability Focus: Source locally, reduce waste, and adopt eco-friendly practices that resonate with modern diners.\n\n\n" +
+  
+      "Why restaurants thrive with us:\n\n" +
+      "- Adaptable Solutions: Whether you’re a food truck or a Michelin-starred venue, we tailor strategies to fit your vision.\n" +
+      "- Proven Results: Higher foot traffic, improved online reviews, and stronger profit margins—guaranteed.\n" +
+      "- Full Transparency: No jargon, just clear metrics and actionable steps."
+  }
+  ,
   {
-    title: "🍸 Bars",
+    title: "🍹 Bars",
     description:
-      "At *RZ Hospitality, we work with bars to **create engaging, profitable nightlife experiences*. We help craft unique beverage programs, optimize bar operations for efficiency, and implement dynamic pricing strategies to increase revenue. Our services also include ensuring compliance with safety and licensing standards, creating memorable atmospheres that draw customers in. ",
-  },
+      "At RZ Hospitality, we turn bars into vibrant, profit-driving hotspots—whether it’s a chic cocktail lounge, a neighborhood pub, or a high-energy nightclub. Our hands-on expertise covers everything from crafting standout drinks to streamlining operations, ensuring your bar stands out in a crowded market.\n\n\n" +
+  
+      "Here’s how we elevate your bar:\n\n" +
+      "- Signature Beverage Programs: Design unique cocktail menus, curated wine lists, and craft beer selections that keep guests coming back for more.\n" +
+      "- Operational Efficiency: Optimize workflows—speed up service, reduce waste, and manage inventory smarter with tech-driven solutions.\n" +
+      "- Revenue Boosters: Dynamic pricing, happy hour strategies, and upselling tactics to maximize every transaction.\n" +
+      "- Atmosphere & Ambiance: Create Instagram-worthy interiors, themed nights, and live entertainment concepts that draw crowds.\n" +
+      "- Compliance & Safety: Navigate licensing, health regulations, and staff training to keep your bar running smoothly—and legally.\n" +
+      "- Staff Excellence: Train bartenders in mixology mastery and customer engagement to deliver unforgettable experiences.\n" +
+      "- Local Partnerships: Collaborate with breweries, distilleries, and influencers to amplify your brand’s reach.\n\n\n" +
+  
+      "Why bars thrive with us:\n\n" +
+      "- Versatility: Solutions tailored to dive bars, rooftop venues, speakeasies, and beyond.\n" +
+      "- Trend-Driven: Tap into craft cocktails, zero-proof menus, or experiential drinking trends.\n" +
+      "- Results You Can Measure: Higher foot traffic, repeat customers, and healthier margins—guaranteed."
+  }
+  ,
   {
-    title: "☕ Coffeeshops",
+    title: "☕ Coffeeshops & Brunch",
     description:
-      "For coffeeshops, we focus on *improving operational efficiency and building brand loyalty*. We streamline ordering processes, reduce wait times, and design inviting atmospheres that keep customers returning. Our team helps strengthen your brand identity, create specialty menu offerings, and implement eco-friendly practices to enhance both customer experience and profitability.",
-  },
+      "At RZ Hospitality, we elevate your coffeeshop into a go-to destination for both caffeine lovers and brunch enthusiasts. Whether you’re a cozy neighborhood spot or a trendy urban café, we help you master the art of blending specialty coffee with irresistible brunch offerings—all while streamlining operations and building a loyal customer base.\n\n\n" +
+  
+      "Here’s how we brew success for your business:\n\n" +
+      "- Brunch Menu Magic: Craft crave-worthy brunch menus featuring fresh, locally sourced ingredients, from avocado toast to gourmet pancakes, paired perfectly with your coffee lineup.\n" +
+      "- Operational Efficiency: Simplify workflows for peak hours—speed up coffee brewing, optimize kitchen prep, and reduce wait times without compromising quality.\n" +
+      "- Brand Identity: Strengthen your unique vibe with cohesive branding, from Instagrammable interiors to packaging that tells your story.\n" +
+      "- Specialty Coffee Excellence: Train baristas in latte art, pour-over techniques, and brewing consistency to keep coffee connoisseurs coming back.\n" +
+      "- Eco-Friendly Practices: Implement sustainable solutions like compostable packaging, zero-waste initiatives, and ethical bean sourcing to attract conscious consumers.\n" +
+      "- Brunch Experience Design: Create themed brunch events (e.g., bottomless coffee Saturdays, live acoustic mornings) to drive foot traffic and social buzz.\n" +
+      "- Tech Integration: Upgrade POS systems, loyalty apps, and online ordering to cater to fast-paced, tech-savvy customers.\n" +
+      "- Profit Margins: Balance premium ingredients with cost control—negotiate supplier deals and minimize food waste.\n\n\n" +
+  
+      "Why choose us?\n\n" +
+      "- Dual Focus: We master the synergy between coffee culture and brunch trends, turning your café into a daytime hotspot.\n" +
+      "- Turnkey Solutions: From menu design to staff training, we handle every detail so you can focus on your guests.\n" +
+      "- Community Building: Foster loyalty through personalized service, local partnerships, and events that make your shop the heart of the neighborhood.\n\n\n" +
+  
+      "Ready to transform your coffeeshop into the ultimate brunch-and-brew haven? Let’s grind out a plan together! ☕🥑"
+  }
+  ,
 ];
 const Services = () => {
   const [activeSection, setActiveSection] = useState<any>("🏨 Hotels");
@@ -151,7 +213,7 @@ const Services = () => {
                               <div className="underline">Read More</div>
                             </div>
                           </DialogTrigger>
-                          <DialogContent className=" p-0 lg:w-4/5 rounded-xl bg-cover max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none h-4/5 lg:mx-0  overflow-y-scroll">
+                          <DialogContent className=" lg:w-4/5 rounded-xl bg-cover max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none h-4/5 lg:mx-0  overflow-y-scroll">
                           <DialogHeader>
                               <div className="flex items-center justify-center">
                                 <img
@@ -160,11 +222,11 @@ const Services = () => {
                                   className="w-44 h-auto"
                                 />
                               </div>
-                              <DialogTitle className="lg:text-3xl text-xl text-white">
+                              <DialogTitle className="lg:text-3xl text-xl text-white ">
                                 {service.title}
                               </DialogTitle>
                             </DialogHeader>
-                            <DialogDescription className="lg:text-lg text-left text-sm text-slate-50 whitespace-pre-line">
+                            <DialogDescription className="lg:text-lg text-left text-sm text-slate-50 whitespace-pre-line pt-4">
                               {service.description}
                             </DialogDescription>
                           </DialogContent>
@@ -258,16 +320,16 @@ const Services = () => {
         </Carousel>*/}
       </div>
       <div className="w-full flex lg:flex-row flex-col items-center justify-between">
-        <div className="lg:px-16 lg:w-2/3 p-3">
-          <div className="max-w-2xl mx-auto ">
+        <div className="lg:px-16 lg:w-full p-3">
+          <div className="w-full mx-auto ">
             <h1 className="lg:text-2xl text-lg">
               Diverse Range of Hospitality Establishments with Tailored
               Strategies to Optimize Operations, and Maximize Success
             </h1>
           </div>
-          <div className="max-w-2xl mx-auto mt-6">
+          <div className="mx-auto mt-6">
             {sections.map((section, index) => (
-              <div key={index} className="mb-6">
+              <div key={index} className="mb-6 relative">
                 {/* Section Title */}
                 <h2
                   onClick={() =>
@@ -290,18 +352,46 @@ const Services = () => {
                 {/* Description (Only Show When Active) */}
                 {activeSection === section.title && (
                   <div className="mt-2 p-4 ">
-                    <p className="text-gray-700 dark:text-gray-300 lg:text-lg text-sm">
+                    <p className="text-gray-700 dark:text-gray-300 lg:text-lg text-sm line-clamp-5">
                       {section.description}
                     </p>
+                    <div className="w-full flex items-center justify-end">
+                        <Dialog>
+                          <DialogTrigger>
+                            <div className="text-slate-500 font-semibold px-6 py-2">
+                              <div className="underline">Read More</div>
+                            </div>
+                          </DialogTrigger>
+                          <DialogContent className=" lg:w-4/5 rounded-xl bg-cover max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none h-4/5 lg:mx-0  overflow-y-scroll">
+                          <DialogHeader>
+                              <div className="flex items-center justify-center">
+                                <img
+                                  src="/images/logo.png"
+                                  alt=""
+                                  className="w-44 h-auto"
+                                />
+                              </div>
+                              <DialogTitle className="lg:text-3xl text-xl text-white">
+                                {section.title}
+                              </DialogTitle>
+                            </DialogHeader>
+                            <DialogDescription className="lg:text-lg text-left text-sm text-slate-50 whitespace-pre-line">
+                              {section.description}
+                            </DialogDescription>
+                          </DialogContent>
+                        </Dialog>
+                        </div>
                   </div>
                 )}
               </div>
             ))}
           </div>
-        </div>
+        
+        {/*
         <div>
           <img src="/images/items.png" alt="" className="lg:max-w-screen-sm " />
         </div>
+        */}</div>
       </div>
     </div>
   );

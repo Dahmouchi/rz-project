@@ -23,12 +23,29 @@ export function Hero() {
               their full potential through
             </h1>
             <div className="flex gap-2 items-center justify-center mt-2">
-              <button className="bg-gradient-to-r  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
-                <div>SEE OUR SERVICES</div>
-              </button>
-              <button className="border-2 text-white font-semibold px-6 py-2 rounded-full border-white">
+              <div className="cursor-pointer" onClick={() => {
+                const section = document.querySelector("#our-services");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}>
+              <div
+             
+              className="bg-gradient-to-r  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
+                <div 
+                 
+                >SEE OUR SERVICES</div>
+              </div></div>
+              <div
+               onClick={() => {
+                const section = document.querySelector("#contact");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="border-2 cursor-pointer text-white font-semibold px-6 py-2 rounded-full border-white">
                 <div>Get in touch</div>
-              </button>
+              </div>
             </div>
           </div>
 
@@ -74,12 +91,14 @@ export function Hero() {
         <div>
           <h1 className="lg:text-lg text-md text-white">Global partners that trusted us</h1>
         </div>
+        {/* 
         <div className="flex items-center justify-between lg:gap-16 gap-6 py-6">
           <img src="/icons/icon1.png" alt="" className="lg:w-24 w-16 h-auto"/>
           <img src="/icons/icon2.png" alt="" className="lg:w-24 w-16 h-auto"/>
           <img src="/icons/icon4.png" alt="" className="lg:w-24 w-16 h-auto"/>
           <img src="/icons/icon5.png" alt="" className="lg:w-24 w-16 h-auto"/>
-        </div>
+        </div>*/}
+        
       </div>
     </div>
   );
