@@ -56,12 +56,11 @@ const Testimonials = () => {
   return (
     <div className="lg:py-8 lg:px-8 py-4 px-2" id="Testimonials">
       <div
-        className="bg-main lg:rounded-3xl rounded-xl text-white lg:py-16 lg:px-16 px-4 py-4 bg-cover lg:bg-center"
-        style={{
-          backgroundImage: 'url("/images/Lines.png")',
-        }}
+        className="bg-gradient-to-r relative from-main2 via-main to-main2 lg:rounded-3xl rounded-xl text-white lg:py-16 lg:px-16 px-4 py-4 bg-cover lg:bg-center"
+       
       >
-         
+                 <img src="/images/Lines.png" alt="" className="w-full h-full absolute top-0 "/>
+
         <div>
         <div className="flex gap-2 items-center">
             <div className="w-3 h-3 rounded-full bg-second"></div>
@@ -91,7 +90,7 @@ const Testimonials = () => {
                 className="md:basis-1/2 lg:basis-1/4 flex items-center justify-center"
               >
                 <div className="p-4 w-full flex items-center justify-center">
-                  <div className="bg-gradient-to-b from-[#bfb2a9] to-[#737861] rounded-lg p-4 pt-8">
+                  <div className="bg-gradient-to-b from-text to-text2 rounded-lg p-4 pt-8">
                     <div className="flex flex-col aspect-square  gap-4 text-white justify-between">
                       <h1 className="text-lg">{service.text}</h1>
                       <div className="flex gap-2 items-center">
@@ -108,8 +107,8 @@ const Testimonials = () => {
             ))}
           </CarouselContent>
           <div className="w-full flex items-center justify-between px-10 mt-8 ">
-            <CarouselPrevious className="bg-second z-10" />
-            <CarouselNext className="bg-second z-10" />
+            <CarouselPrevious className="bg-text2 z-10" />
+            <CarouselNext className="bg-text2 z-10" />
           </div>
         </Carousel>
       </div>

@@ -156,7 +156,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-gradient-to-r from-yellow-400 lg:w-1/2 w-full to-yellow-600 text-white px-6 py-2 rounded-md"
+                className="bg-gradient-to-r from-text2 via-text to-text2 lg:w-1/2 w-full  text-white px-6 py-2 rounded-md"
               >
                 {loading ? "Applying..." : "Apply"}
               </button>

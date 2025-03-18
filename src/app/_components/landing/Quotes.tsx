@@ -4,11 +4,10 @@ const Quotes = () => {
   return (
     <div className="lg:py-8 lg:px-8 py-4 px-4">
       <div
-        className="bg-main lg:rounded-3xl rounded-xl lg:py-8 lg:px-8 px-4 py-4 bg-cover lg:bg-center"
-        style={{
-          backgroundImage: 'url("/images/Lines.png")',
-        }}
+        className="bg-gradient-to-r relative from-main2 via-main to-main2 lg:rounded-3xl rounded-xl lg:py-8 lg:px-8 px-4 py-4 bg-cover lg:bg-center"
+       
       >
+        <img src="/images/Lines.png" alt="" className="w-full h-full absolute top-0 "/>
         <div className="flex lg:flex-row flex-col gap-4 items-center">
           <img
             src="/images/quote.png"
@@ -17,7 +16,8 @@ const Quotes = () => {
           />
           <div className="flex flex-col gap-4 lg:px-32 md:px-10">
             <h1 className="lg:text-5xl text-second text-4xl ">
-              Welcome to Rz Hospitality{" "}
+
+              <span className="bg-gradient-to-r from-main3 to-gray-500 inline-block text-transparent bg-clip-text mr-2">Welcome to </span><span className="bg-gradient-to-r from-text2 via-text to-text2 inline-block text-transparent bg-clip-text"> Rz Hospitality</span>{" "}
             </h1>
             <h1 className="text-slate-100 lg:text-xl text-md">
               ”Founded in 2023 by Ryda Zarhouni, Rz Hospitality is your trusted

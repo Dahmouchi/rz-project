@@ -48,10 +48,10 @@ const Faq = () => {
       </div>
       <div className="grid grid-col-1 lg:grid-cols-2 py-8">
         <div className="flex flex-col justify-between ">
-          <h1 className="lg:text-5xl text-2xl text-second lg:w-2/3">
+          <h1 className="lg:text-5xl text-2xl bg-gradient-to-r from-main3 to-gray-500 inline-block text-transparent bg-clip-text lg:w-2/3">
             Answers to the frequently asked questions.
           </h1>
-          <button className="bg-gradient-to-b hidden lg:block text-xl my-8 lg:w-2/6 font-semibold from-amber-400 to-yellow-600 px-8 py-2 rounded-full ">
+          <button className="bg-gradient-to-r from-text2 text-white via-text to-text2 hidden lg:block text-xl my-8 lg:w-2/6 font-semibold  px-8 py-2 rounded-full ">
             <div>Get in touch</div>
           </button>
         </div>
@@ -76,7 +76,7 @@ const Faq = () => {
             </div>
           ))}
         </div>
-        <button className="bg-gradient-to-b lg:hidden text-xl my-8 lg:w-1/4 font-semibold from-amber-400 to-yellow-600 px-8 py-2 rounded-full ">
+        <button className="bg-gradient-to-r from-text2 text-white via-text to-text2 lg:hidden text-xl my-8 lg:w-1/4 font-semibold  px-8 py-2 rounded-full ">
             <div>Get in touch</div>
           </button>
       </div>

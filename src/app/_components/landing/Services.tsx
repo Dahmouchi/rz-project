@@ -104,9 +104,11 @@ const Services = () => {
     <div id="our-services">
       <div className="w-full text-center flex items-center justify-center">
         <div>
-          <h1 className="lg:text-7xl text-4xl text-second">Our Services</h1>
+          <h1 className="lg:text-7xl text-4xl bg-gradient-to-r from-text2 via-text to-text2 inline-block text-transparent bg-clip-text">
+            Our Services
+          </h1>
           <div className="flex items-center justify-center lg:mt-4 mt-2">
-            <h1 className=" lg:text-lg text-sm px-4 text-center text-slate-400 lg:w-2/3">
+            <h1 className=" lg:text-lg text-sm px-4 text-center text-slate-400 dark:text-gray-300 lg:w-2/3">
               Leveraging years of expertise, we empower hotels, resorts,
               restaurants, and hospitality businesses to elevate their services
               and achieve lasting success.
@@ -116,11 +118,11 @@ const Services = () => {
       </div>
       <div className="py-8 lg:mt-10 mt-4 relative">
         <Carousel
-         plugins={[
-          Autoplay({
-            delay: 3500,
-          }),
-        ]}
+          plugins={[
+            Autoplay({
+              delay: 3500,
+            }),
+          ]}
           opts={{
             align: "center",
           }}
@@ -135,7 +137,7 @@ const Services = () => {
                 className="md:basis-1/2 lg:basis-1/4 flex items-center justify-center"
               >
                 <div className="p-4 w-full flex items-center justify-center">
-                  <div className="bg-gradient-to-b relative from-[#bfb2a9] to-[#737861] rounded-lg p-4 pt-8">
+                  <div className="bg-gradient-to-b relative from-text2 to-text rounded-lg p-4 pt-8">
                     <div className="flex flex-col aspect-square  p-6 gap-4 text-white">
                       <h1 className="text-4xl">{service.title}</h1>
                       <div className="w-full h-[2px] my-4 bg-white rounded-full"></div>
@@ -149,13 +151,8 @@ const Services = () => {
                               <div className="underline">Read More</div>
                             </div>
                           </DialogTrigger>
-                          <DialogContent
-                            className="bg-main lg:w-4/5 rounded-xl bg-cover max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none h-4/5 lg:mx-0  overflow-y-scroll"
-                            style={{
-                              backgroundImage: 'url("/images/Lines.png")',
-                            }}
-                          >
-                            <DialogHeader>
+                          <DialogContent className=" p-0 lg:w-4/5 rounded-xl bg-cover max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none h-4/5 lg:mx-0  overflow-y-scroll">
+                          <DialogHeader>
                               <div className="flex items-center justify-center">
                                 <img
                                   src="/images/logo.png"
@@ -166,10 +163,10 @@ const Services = () => {
                               <DialogTitle className="lg:text-3xl text-xl text-white">
                                 {service.title}
                               </DialogTitle>
-                              <DialogDescription className="lg:text-lg text-left text-sm text-slate-50 whitespace-pre-line">
-                                {service.description}
-                              </DialogDescription>
                             </DialogHeader>
+                            <DialogDescription className="lg:text-lg text-left text-sm text-slate-50 whitespace-pre-line">
+                              {service.description}
+                            </DialogDescription>
                           </DialogContent>
                         </Dialog>
                       </div>
