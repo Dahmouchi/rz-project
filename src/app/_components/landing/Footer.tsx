@@ -30,11 +30,11 @@ const Footer = () => {
               className="w-1/2 bg-white rounded-full px-8 py-2"
             />
             <button className="bg-gradient-to-b text-xl font-semibold from-amber-400 to-yellow-600 px-8 py-2 rounded-full ">
-              <div>Get touch</div>
+              <div>Get in touch</div>
             </button>
           </div>
         </div>
-        <img src="/images/circle.png" alt="" className="h-full w-auto" />
+        <img src="/images/circle2.png" alt="" className="h-full w-auto" />
       </div>
       <div
         className="bg-main text-white lg:pt-16 lg:px-16 px-4 py-4 bg-cover lg:bg-end"

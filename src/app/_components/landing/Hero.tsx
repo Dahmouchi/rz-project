@@ -23,11 +23,11 @@ export function Hero() {
               their full potential through
             </h1>
             <div className="flex gap-2 items-center justify-center mt-2">
-              <button className="bg-gradient-to-b font-semibold from-amber-400 to-yellow-600 px-4 py-2 rounded-full text-slate-700">
+              <button className="bg-gradient-to-b font-semibold from-amber-400 to-yellow-600  px-4 py-2 rounded-full text-slate-100">
                 <div>SEE OUR SERVICES</div>
               </button>
               <button className="border-2 text-white font-semibold px-6 py-2 rounded-full border-white">
-                <div>Get touch</div>
+                <div>Get in touch</div>
               </button>
             </div>
           </div>

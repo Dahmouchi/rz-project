@@ -11,7 +11,7 @@ export default {
   	extend: {
   		colors: {
 			main:"#48a0a9",
-			second:"#F2B737",
+			second:"#bfb2a9",
 			dark:"#202020",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

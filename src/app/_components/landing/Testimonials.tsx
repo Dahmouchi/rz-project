@@ -91,7 +91,7 @@ const Testimonials = () => {
                 className="md:basis-1/2 lg:basis-1/4 flex items-center justify-center"
               >
                 <div className="p-4 w-full flex items-center justify-center">
-                  <div className="bg-gradient-to-b from-amber-400 to-yellow-600 rounded-lg p-4 pt-8">
+                  <div className="bg-gradient-to-b from-[#bfb2a9] to-[#737861] rounded-lg p-4 pt-8">
                     <div className="flex flex-col aspect-square  gap-4 text-white justify-between">
                       <h1 className="text-lg">{service.text}</h1>
                       <div className="flex gap-2 items-center">

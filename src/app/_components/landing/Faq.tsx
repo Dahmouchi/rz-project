@@ -51,8 +51,8 @@ const Faq = () => {
           <h1 className="lg:text-5xl text-2xl text-second lg:w-2/3">
             Answers to the frequently asked questions.
           </h1>
-          <button className="bg-gradient-to-b hidden lg:block text-xl my-8 lg:w-1/4 font-semibold from-amber-400 to-yellow-600 px-8 py-2 rounded-full ">
-            <div>Get touch</div>
+          <button className="bg-gradient-to-b hidden lg:block text-xl my-8 lg:w-2/6 font-semibold from-amber-400 to-yellow-600 px-8 py-2 rounded-full ">
+            <div>Get in touch</div>
           </button>
         </div>
         <div className="space-y-4 mt-4">
@@ -77,7 +77,7 @@ const Faq = () => {
           ))}
         </div>
         <button className="bg-gradient-to-b lg:hidden text-xl my-8 lg:w-1/4 font-semibold from-amber-400 to-yellow-600 px-8 py-2 rounded-full ">
-            <div>Get touch</div>
+            <div>Get in touch</div>
           </button>
       </div>
     </div>
