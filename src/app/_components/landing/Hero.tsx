@@ -23,27 +23,28 @@ export function Hero() {
               their full potential through
             </h1>
             <div className="flex gap-2 items-center justify-center mt-2">
-              <div className="cursor-pointer" onClick={() => {
-                const section = document.querySelector("#our-services");
-                if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
-                }
-              }}>
               <div
-             
-              className="bg-gradient-to-r  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
-                <div 
-                 
-                >SEE OUR SERVICES</div>
-              </div></div>
+                className="cursor-pointer"
+                onClick={() => {
+                  const section = document.querySelector("#our-services");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                <div className="bg-gradient-to-r  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
+                  <div>SEE OUR SERVICES</div>
+                </div>
+              </div>
               <div
-               onClick={() => {
-                const section = document.querySelector("#contact");
-                if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-              className="border-2 cursor-pointer text-white font-semibold px-6 py-2 rounded-full border-white">
+                onClick={() => {
+                  const section = document.querySelector("#contact");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className="border-2 cursor-pointer text-white font-semibold px-6 py-2 rounded-full border-white"
+              >
                 <div>Get in touch</div>
               </div>
             </div>
@@ -87,9 +88,11 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:h-[30vh] lg:flex-row flex-col py-4 bg-gradient-to-r from-main2 via-main to-main2 border-y-[1px] border-slate-200 dark:border-slate-500 flex items-center justify-between lg:px-44">
+      <div className="w-full lg:h-[30vh] h-32 lg:flex-row flex-col py-4 bg-gradient-to-r from-main2 via-main to-main2 border-y-[1px] border-slate-200 dark:border-slate-500 flex items-center justify-between lg:px-44">
         <div>
-          <h1 className="lg:text-lg text-md text-white">Global partners that trusted us</h1>
+          <h1 className="lg:text-lg text-md text-white">
+            Global partners that trusted us
+          </h1>
         </div>
         {/* 
         <div className="flex items-center justify-between lg:gap-16 gap-6 py-6">
@@ -98,7 +101,6 @@ export function Hero() {
           <img src="/icons/icon4.png" alt="" className="lg:w-24 w-16 h-auto"/>
           <img src="/icons/icon5.png" alt="" className="lg:w-24 w-16 h-auto"/>
         </div>*/}
-        
       </div>
     </div>
   );

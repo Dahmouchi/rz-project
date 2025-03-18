@@ -14,9 +14,11 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose
 } from "@/components/ui/dialog";
 
 const services = [
@@ -229,6 +231,13 @@ const Services = () => {
                             <DialogDescription className="lg:text-lg text-left text-sm text-slate-50 whitespace-pre-line pt-4">
                               {service.description}
                             </DialogDescription>
+                            <DialogFooter>
+                            <DialogClose>
+                            <div className="bg-gradient-to-r  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
+                  <div>Close</div>
+                </div>
+                            </DialogClose>
+                            </DialogFooter>
                           </DialogContent>
                         </Dialog>
                       </div>
@@ -378,6 +387,13 @@ const Services = () => {
                             <DialogDescription className="lg:text-lg text-left text-sm text-slate-50 whitespace-pre-line">
                               {section.description}
                             </DialogDescription>
+                            <DialogFooter>
+                            <DialogClose>
+                            <div className="bg-gradient-to-r mt-5  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
+                  <div>Close</div>
+                </div>
+                            </DialogClose>
+                            </DialogFooter>
                           </DialogContent>
                         </Dialog>
                         </div>
