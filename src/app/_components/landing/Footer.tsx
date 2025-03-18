@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="bg-main w-full lg:w-3/4 lg:h-[400px] lg:rounded-r-full rounded-t-full lg:rounded-tl-none  flex lg:flex-row flex-col-reverse">
         <div className="w-full py-4 flex flex-col lg:items-start items-center gap-4 px-8 text-center justify-center">
           <div>
-            <h1 className="lg:text-left text-center text-4xl lg:text-6xl text-white">
+            <h1 className="lg:text-left text-center text-3xl lg:text-6xl text-white">
               Unlock the Future of{" "}
             </h1>
-            <h1 className="lg:text-left text-center text-4xl lg:text-6xl text-white">
+            <h1 className="lg:text-left text-center text-3xl lg:text-6xl text-white">
               Hospitality Excellence
             </h1>
           </div>
@@ -27,7 +27,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Your e-mail..."
-              className="w-1/2 bg-white rounded-full px-8 py-2"
+              className=" bg-white rounded-full px-8 py-2 w-full"
             />
             <button className="bg-gradient-to-b text-xl font-semibold from-amber-400 to-yellow-600 px-8 py-2 rounded-full ">
               <div>Get in touch</div>
