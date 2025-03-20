@@ -233,7 +233,7 @@ const Services = () => {
                             </DialogDescription>
                             <DialogFooter>
                             <DialogClose>
-                            <div className="bg-gradient-to-r  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
+                            <div className="bg-gradient-to-r mt-5  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
                   <div>Close</div>
                 </div>
                             </DialogClose>

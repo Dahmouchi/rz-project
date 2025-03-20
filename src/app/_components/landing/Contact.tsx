@@ -103,22 +103,6 @@ const Contact = () => {
                 className="w-full p-2 border border-gray-300 rounded-md"
               />
             </div>
-
-            {/* Business Name */}
-            <div>
-              <label className="block font-medium text-gray-700 dark:text-gray-300">
-                Business Name
-              </label>
-              <input
-                {...register("businessName", {
-                  required: "Business name is required",
-                })}
-                placeholder="Enter the name of your business"
-                className="w-full p-2 border border-gray-300 rounded-md"
-              />
-            </div>
-
-            {/* Email Address */}
             <div>
               <label className="block font-medium text-gray-700 dark:text-gray-300">
                 Email Address
@@ -133,6 +117,39 @@ const Contact = () => {
                 className="w-full p-2 border border-gray-300 rounded-md"
               />
             </div>
+            {/* Business Name */}
+            <div className="">
+              <label className="block font-medium text-gray-700 dark:text-gray-300">
+                Phone Number
+              </label>
+              <Controller
+                name="phone"
+                control={control}
+                rules={{ required: "Phone number is required" }}
+                render={({ field }) => (
+                  <PhoneInput
+                    {...field}
+                    country={"gb"} // Default country (change as needed)
+                    enableSearch={true} // Enable country search
+                    inputClass="w-full p-2"
+                  />
+                )}
+              />
+            </div>
+            <div>
+              <label className="block font-medium text-gray-700 dark:text-gray-300">
+                Business Name
+              </label>
+              <input
+                {...register("businessName", {
+                  required: "Business name is required",
+                })}
+                placeholder="Enter the name of your business"
+                className="w-full p-2 border border-gray-300 rounded-md"
+              />
+            </div>
+          
+            {/* Email Address */}
 
             {/* Type of Business */}
             <div>
@@ -150,29 +167,10 @@ const Contact = () => {
                 <option value="Restaurant">Restaurant</option>
                 <option value="Bar">Bar</option>
                 <option value="Coffeeshop & Brunch">Coffeeshop & Brunch</option>
-
               </select>
             </div>
 
             {/* Phone Number */}
-            <div className="">
-              <label className="block font-medium text-gray-700 dark:text-gray-300">
-                Phone Number
-              </label>
-                <Controller
-                  name="phone"
-                  control={control}
-                  rules={{ required: "Phone number is required" }}
-                  render={({ field }) => (
-                    <PhoneInput
-                      {...field}
-                      country={"gb"} // Default country (change as needed)
-                      enableSearch={true} // Enable country search
-                      inputClass="w-full p-2"
-                    />
-                  )}
-                />
-            </div>
 
             {/* How Can We Help */}
             <div>
@@ -180,19 +178,20 @@ const Contact = () => {
                 How Can We Help You?
               </label>
               <select
-  {...register("service", {
-    required: "Please select a service",
-  })}
-  className="w-full p-2 border border-gray-300 rounded-md"
->
-  <option value="">Select the service(s) you&apos;re interested in</option>
-  {services.map((service, index) => (
-    <option key={index} value={service.title}>
-      {service.title}
-    </option>
-  ))}
-</select>
-
+                {...register("service", {
+                  required: "Please select a service",
+                })}
+                className="w-full p-2 border border-gray-300 rounded-md"
+              >
+                <option value="">
+                  Select the service(s) you&apos;re interested in
+                </option>
+                {services.map((service, index) => (
+                  <option key={index} value={service.title}>
+                    {service.title}
+                  </option>
+                ))}
+              </select>
             </div>
 
             {/* Message */}
