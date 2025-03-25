@@ -26,7 +26,7 @@ const About = () => {
 
           <div className="w-full h-[2px] bg-white lg:my-4 my-2"></div>
         </div>
-        <div className="flex lg:flex-row flex-col lg:items-center lg:justify-between">
+        <div className="flex lg:flex-row flex-col lg:items-start lg:justify-between">
           <div className="flex flex-col lg:gap-8 gap-6 lg:w-1/2 lg:text-lg text-sm">
             <h1 className="text-second lg:text-5xl text-3xl">
               <span className="bg-gradient-to-r from-main3 to-gray-500 inline-block text-transparent bg-clip-text mr-2">
@@ -37,7 +37,7 @@ const About = () => {
                 RZ Hospitality,
               </span>{" "}
             </h1>
-            <h1>
+            {/*<h1>
               <span className="font-bold mr-2">Who We Are :</span> We&apos;re
               not your typical consultants. We&apos;re architects of
               possibility, partners in progress, and relentless problem-solvers.
@@ -81,7 +81,7 @@ const About = () => {
               <span className="font-bold mr-2">Let&apos;s start today</span>
             </h1>
             <span className="font-bold mr-2">RZ Hospitality: Where Vision Meets Mastery.</span>
-
+ */}
           </div>
           <div>
             <div className="max-w-4xl mx-auto grid lg:grid-cols-1 md:grid-cols-2 grid-cols-2 lg:gap-12 gap-3 lg:px-6 my-8">

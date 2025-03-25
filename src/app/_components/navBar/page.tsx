@@ -24,7 +24,7 @@ const NavBar = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="lg:absolute top-0 left-0 flex items-center  rtl:space-x-reverse lg:px-12 lg:py-7 lg:z-50 rounded-2xl lg:bg-white lg:dark:bg-dark"
+          className="lg:absolute top-0 left-0 flex items-center  rtl:space-x-reverse lg:px-12 lg:py-7 lg:z-50 rounded-r-2xl lg:bg-white lg:dark:bg-dark"
         >
           <img
             src="/images/logo.png"
