@@ -2,7 +2,7 @@ import React from "react";
 
 const Quotes = () => {
   return (
-    <div className=" ">
+    <div className=" py-4">
       <div
         className="bg-gradient-to-r relative from-main2 via-main to-main2   lg:py-8 lg:px-8 px-4 py-4 bg-cover lg:bg-center"
        
@@ -41,11 +41,16 @@ const Quotes = () => {
             <h1 className=" lg:text-2xl text-xl bg-gradient-to-r from-text2 via-text to-text2 inline-block text-transparent bg-clip-text font-bold">
               Ryda ZARHOUNI
             </h1>
-            <h1 className="text-white uppercase font-light">Founder of RZ Hospitality</h1>
+            <h1   className="text-white uppercase font-light">Founder of RZ Hospitality</h1>
             </div>
+            <div id="our-services">
+
           </div>
+          </div>
+          
         </div>
       </div>
+      <div></div>
     </div>
   );
 };
