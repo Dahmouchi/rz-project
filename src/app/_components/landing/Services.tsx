@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
   Carousel,
   CarouselContent,
@@ -79,7 +78,7 @@ const services = [
 
 const sections = [
   {
-    title: "🏨 Hotels",
+    title: "Hotels",
     description:
       "At RZ Hospitality, we work hands-on with hotels of all sizes and styles—from luxury resorts to boutique properties, city hotels to budget accommodations. Our practical, results-driven approach ensures your operations run smoothly, your guests leave satisfied, and your bottom line grows.\n\n\n" +
       
@@ -98,7 +97,7 @@ const sections = [
       "Let’s roll up our sleeves and transform your hotel into a well-oiled, guest-loved, profit-driving machine. Ready to get started?"
   },
   {
-    title: "🍽️ Restaurants",
+    title: "Restaurants",
     description:
       "At RZ Hospitality, we work side-by-side with restaurants of all types—from cozy bistros and family diners to high-end eateries and global franchises. Our hands-on approach focuses on turning challenges into opportunities, refining every detail to boost profitability, streamline operations, and create unforgettable dining experiences.\n\n\n" +
   
@@ -118,7 +117,7 @@ const sections = [
   }
   ,
   {
-    title: "🍹 Bars",
+    title: "Bars",
     description:
       "At RZ Hospitality, we turn bars into vibrant, profit-driving hotspots—whether it’s a chic cocktail lounge, a neighborhood pub, or a high-energy nightclub. Our hands-on expertise covers everything from crafting standout drinks to streamlining operations, ensuring your bar stands out in a crowded market.\n\n\n" +
   
@@ -138,7 +137,7 @@ const sections = [
   }
   ,
   {
-    title: "☕ Coffeeshops & Brunch",
+    title: "Coffeeshops & Brunch",
     description:
       "At RZ Hospitality, we elevate your coffeeshop into a go-to destination for both caffeine lovers and brunch enthusiasts. Whether you’re a cozy neighborhood spot or a trendy urban café, we help you master the art of blending specialty coffee with irresistible brunch offerings—all while streamlining operations and building a loyal customer base.\n\n\n" +
   
@@ -162,11 +161,10 @@ const sections = [
   ,
 ];
 const Services = () => {
-  const [activeSection, setActiveSection] = useState<any>("🏨 Hotels");
 
   return (
     <div id="our-services">
-      <div className="w-full text-center flex items-center justify-center">
+      <div className="w-full text-center flex items-center justify-center mt-8">
         <div>
           <h1 className="lg:text-7xl text-4xl bg-gradient-to-r from-text2 via-text to-text2 inline-block text-transparent bg-clip-text">
             Our Services
@@ -331,74 +329,31 @@ const Services = () => {
       <div className="w-full flex lg:flex-row flex-col items-center justify-between">
         <div className="lg:px-16 lg:w-full p-3">
           <div className="w-full mx-auto ">
-            <h1 className="lg:text-2xl text-lg">
-              Diverse Range of Hospitality Establishments with Tailored
-              Strategies to Optimize Operations, and Maximize Success
+            <h1 className="lg:text-3xl text-lg text-center font-bold text-main dark:text-white">
+             Who we serve
             </h1>
           </div>
-          <div className="mx-auto mt-6">
+          <div className="mx-auto mt-6 lg:grid grid-cols-2 gap-4">
             {sections.map((section, index) => (
-              <div key={index} className="mb-6 relative">
+              <div key={index} className="mb-6 relative border-4 border-main rounded-xl p-4">
                 {/* Section Title */}
                 <h2
-                  onClick={() =>
-                    setActiveSection(
-                      activeSection === section.title ? null : section.title
-                    )
-                  }
-                  className={`lg:text-5xl text-3xl cursor-pointer transition-colors ${
-                    activeSection === section.title
-                      ? "text-second font-semibold"
-                      : "text-gray-400 hover:text-gray-700"
-                  }`}
+                 
+                  className="lg:text-5xl text-3xl cursor-pointer transition-colors 
+                   text-second font-semibold"
                 >
                   {section.title}
-                  {activeSection === section.title && (
                     <div className="w-full h-[2px] bg-second my-4"></div>
-                  )}
+                  
                 </h2>
 
                 {/* Description (Only Show When Active) */}
-                {activeSection === section.title && (
                   <div className="mt-2 p-4 ">
                     <p className="text-gray-700 dark:text-gray-300 lg:text-lg text-sm line-clamp-5">
                       {section.description}
                     </p>
-                    <div className="w-full flex items-center justify-end">
-                        <Dialog>
-                          <DialogTrigger>
-                            <div className="text-slate-500 font-semibold px-6 py-2">
-                              <div className="underline">Read More</div>
-                            </div>
-                          </DialogTrigger>
-                          <DialogContent className=" lg:w-4/5 rounded-xl bg-cover max-w-sm sm:max-w-md md:max-w-lg lg:max-w-none h-4/5 lg:mx-0  overflow-y-scroll">
-                          <DialogHeader>
-                              <div className="flex items-center justify-center">
-                                <img
-                                  src="/images/logo.png"
-                                  alt=""
-                                  className="w-44 h-auto"
-                                />
-                              </div>
-                              <DialogTitle className="lg:text-3xl text-xl text-white">
-                                {section.title}
-                              </DialogTitle>
-                            </DialogHeader>
-                            <DialogDescription className="lg:text-lg text-left text-sm text-slate-50 whitespace-pre-line">
-                              {section.description}
-                            </DialogDescription>
-                            <DialogFooter>
-                            <DialogClose>
-                            <div className="bg-gradient-to-r mt-5  font-semibold from-text2 via-text to-text2  px-4 py-2 rounded-full text-slate-100">
-                  <div>Close</div>
-                </div>
-                            </DialogClose>
-                            </DialogFooter>
-                          </DialogContent>
-                        </Dialog>
-                        </div>
+                    
                   </div>
-                )}
               </div>
             ))}
           </div>

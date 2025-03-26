@@ -50,24 +50,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="w-2/3 h-20 bg-white hidden lg:block absolute bottom-0 right-0 dark:bg-dark rounded-tl-full clip-path-custom">
-            <div className="flex items-center justify-center w-full gap-4 h-full">
-              <div className="w-1/2 h-full flex items-center justify-between mt-6">
-                <div className="">
-                  <h1 className="text-text2 text-3xl font-semibold">16+</h1>
-                  <h1 className="text-md">Hotels served</h1>
-                </div>
-                <div className="">
-                  <h1 className="text-text2 text-3xl font-semibold">5+</h1>
-                  <h1 className="text-md">Restaurants </h1>
-                </div>
-                <div className="">
-                  <h1 className="text-text2 text-3xl font-semibold">6+</h1>
-                  <h1 className="text-md">Clubs</h1>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </div>
         <div className="lg:hidden py-4">
           <div className="flex items-center justify-center w-full gap-4 h-full">
@@ -88,20 +71,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:h-[30vh] h-32 lg:flex-row flex-col py-4 bg-gradient-to-r from-main2 via-main to-main2 border-y-[1px] border-slate-200 dark:border-slate-500 flex items-center justify-between lg:px-44">
-        <div>
-          <h1 className="lg:text-lg text-md text-white">
-            Global partners that trusted us
-          </h1>
-        </div>
-        {/* 
-        <div className="flex items-center justify-between lg:gap-16 gap-6 py-6">
-          <img src="/icons/icon1.png" alt="" className="lg:w-24 w-16 h-auto"/>
-          <img src="/icons/icon2.png" alt="" className="lg:w-24 w-16 h-auto"/>
-          <img src="/icons/icon4.png" alt="" className="lg:w-24 w-16 h-auto"/>
-          <img src="/icons/icon5.png" alt="" className="lg:w-24 w-16 h-auto"/>
-        </div>*/}
-      </div>
+      
     </div>
   );
 }

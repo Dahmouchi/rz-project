@@ -54,12 +54,11 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="lg:py-8 lg:px-8 py-4 px-2" id="Testimonials">
+    <div className="lg:py-8 py-4" id="Testimonials">
       <div
-        className="bg-gradient-to-r relative from-main2 via-main to-main2 lg:rounded-3xl rounded-xl text-white lg:py-16 lg:px-16 px-4 py-4 bg-cover lg:bg-center"
+        className="bg-gradient-to-r relative from-main2 via-main to-main2  text-white lg:py-16 lg:px-16 px-4 py-4 bg-cover lg:bg-center"
        
       >
-                 <img src="/images/Lines.png" alt="" className="w-full h-full absolute top-0 "/>
 
         <div>
         <div className="flex gap-2 items-center">

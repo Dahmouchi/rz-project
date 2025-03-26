@@ -2,12 +2,11 @@ import React from "react";
 
 const Quotes = () => {
   return (
-    <div className="lg:py-8 lg:px-8 py-4 px-4">
+    <div className=" ">
       <div
-        className="bg-gradient-to-r relative from-main2 via-main to-main2 lg:rounded-3xl rounded-xl lg:py-8 lg:px-8 px-4 py-4 bg-cover lg:bg-center"
+        className="bg-gradient-to-r relative from-main2 via-main to-main2   lg:py-8 lg:px-8 px-4 py-4 bg-cover lg:bg-center"
        
       >
-        <img src="/images/Lines.png" alt="" className="w-full h-full absolute top-0 "/>
         <div className="flex lg:flex-row flex-col gap-4 items-center">
           <img
             src="/images/quote.png"

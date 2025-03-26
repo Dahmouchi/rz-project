@@ -1,22 +1,10 @@
 import React from "react";
-const stats = [
-  { value: "12+", description: "Year>s of Industry Expertise" },
-  { value: "100%", description: "Client-Centric Approach" },
-  { value: "10+", description: "Tailored Solutions for Sustainable Growth" },
-  {
-    value: "120+",
-    description: "Extensive Network of Hospitality Professionals",
-  },
-];
+
 const About = () => {
   return (
-    <div className="lg:py-8 lg:px-8 py-4 px-4" id="about-us">
-      <div className="bg-gradient-to-r relative from-main2 via-main to-main2 lg:rounded-3xl rounded-xl text-white lg:py-16 lg:px-16 px-4 py-4 bg-cover lg:bg-center">
-        <img
-          src="/images/Lines.png"
-          alt=""
-          className="w-full h-full absolute top-0 "
-        />
+    <div className="lg:py-8 py-4 " id="about-us">
+      <div className="bg-gradient-to-r relative from-main2 via-main to-main2  text-white lg:py-16 lg:px-16 px-4 py-4 bg-cover lg:bg-center">
+        
 
         <div>
           <div className="flex gap-2 items-center">
@@ -84,16 +72,7 @@ const About = () => {
  */}
           </div>
           <div>
-            <div className="max-w-4xl mx-auto grid lg:grid-cols-1 md:grid-cols-2 grid-cols-2 lg:gap-12 gap-3 lg:px-6 my-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="flex flex-col">
-                  <h1 className="lg:text-5xl text-2xl font-semibold">
-                    {stat.value}
-                  </h1>
-                  <p className="lg:text-lg text-sm mt-2">{stat.description}</p>
-                </div>
-              ))}
-            </div>
+           
           </div>
         </div>
       </div>
