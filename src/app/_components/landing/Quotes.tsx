@@ -13,7 +13,7 @@ const Quotes = () => {
             alt=""
             className="lg:w-1/3 md:w-1/2 h-auto rounded-xl"
           />
-          <div className="flex flex-col gap-4 lg:px-32 md:px-10">
+          <div className="flex flex-col gap-4 lg:px-32 md:px-10 lg:text-left text-center">
             <h1 className="lg:text-5xl text-second text-4xl ">
 
               <span className="bg-gradient-to-r from-main3 to-gray-500 inline-block text-transparent bg-clip-text mr-2">Welcome to </span><span className="bg-gradient-to-r from-text2 via-text to-text2 inline-block text-transparent bg-clip-text"> Rz Hospitality</span>{" "}
@@ -37,9 +37,12 @@ const Quotes = () => {
               Ready to transform your hospitality business? Let&apos;s make it
               happen together!  ”
             </h1>
-            <h1 className="text-right lg:text-2xl text-xl text-slate-50">
-              - Ryda ZARHOUNI
+            <div className="lg:text-right text-center">
+            <h1 className=" lg:text-2xl text-xl bg-gradient-to-r from-text2 via-text to-text2 inline-block text-transparent bg-clip-text font-bold">
+              Ryda ZARHOUNI
             </h1>
+            <h1 className="text-white uppercase font-light">Founder of RZ Hospitality</h1>
+            </div>
           </div>
         </div>
       </div>
