@@ -1,10 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { useState } from "react";
 import React from "react";
-import PhoneInput from "react-phone-input-2";
+//import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { PhoneInput } from "@/components/phone-input";
 const services = [
   {
     title: "General Management",
@@ -61,7 +62,7 @@ const services = [
   },
 ];
 const Contact = () => {
-  const { register, handleSubmit, control } = useForm();
+  const { register, handleSubmit } = useForm();
   const [loading, setLoading] = useState(false);
   const onSubmit = async (data: any) => {
     setLoading(true);
@@ -117,12 +118,14 @@ const Contact = () => {
                 className="w-full p-2 border border-gray-300 rounded-md"
               />
             </div>
-            {/* Business Name */}
+           
             <div className="">
               <label className="block font-medium text-gray-700 dark:text-gray-300">
                 Phone Number
               </label>
-              <Controller
+              <PhoneInput       defaultCountry="GB"           placeholder="Your phone number"
+              />
+               {/* Business Name <Controller
                 name="phone"
                 control={control}
                 rules={{ required: "Phone number is required" }}
@@ -134,7 +137,8 @@ const Contact = () => {
                     inputClass="w-full p-2"
                   />
                 )}
-              />
+              />*/}
+
             </div>
             <div>
               <label className="block font-medium text-gray-700 dark:text-gray-300">
