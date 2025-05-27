@@ -3,6 +3,7 @@ import { Figtree } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import NavBar from "./_components/navBar/page";
+import { Toaster } from 'sonner'
 
 
 const figtree = Figtree({
@@ -39,6 +40,8 @@ export default function RootLayout({
            {children}
            </div>
           </ThemeProvider>
+          <Toaster richColors  />
+
       </body>
     </html>
   );

@@ -1,11 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { useState } from "react";
 import React from "react";
 //import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { PhoneInput } from "@/components/phone-input";
+import Loading from "@/components/Loading";
+import { toast } from "sonner";
+import { createEmail } from "@/actions/form";
+
 const services = [
   {
     title: "General Management",
@@ -62,14 +66,46 @@ const services = [
   },
 ];
 const Contact = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, control,reset } = useForm();
   const [loading, setLoading] = useState(false);
+
   const onSubmit = async (data: any) => {
     setLoading(true);
     console.log(data);
-    // Here you can send the data to your API
-    setLoading(false);
+
+    try {
+      // Prepare email content
+      const res = await createEmail(
+        data.fullName,
+        data.email,
+        data.phone,
+        data.businessName,
+        data.businessType,
+        data.service,
+        data.message
+      );
+
+      if (res) {
+        toast.success("Your application has been submitted successfully!");
+        reset()
+      } else {
+        toast.error(
+          "There was an error submitting your application. Please try again."
+        );
+      }
+      // Optional: Show success message or redirect
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast.error(
+        "There was an error submitting your application. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <div id="contact">
       <div className="relative py-8 min-h-screen p-2">
@@ -118,14 +154,26 @@ const Contact = () => {
                 className="w-full p-2 border border-gray-300 rounded-md"
               />
             </div>
-           
+
             <div className="">
               <label className="block font-medium text-gray-700 dark:text-gray-300">
                 Phone Number
               </label>
-              <PhoneInput       defaultCountry="GB"           placeholder="Your phone number"
+              <Controller
+                name="phone"
+                control={control}
+                rules={{ required: "Phone number is required" }}
+                render={({ field }) => (
+                  <PhoneInput
+                    {...field}
+                    defaultCountry="GB"
+                    placeholder="Your phone number"
+                    onChange={(value) => field.onChange(value)}
+                  />
+                )}
               />
-               {/* Business Name <Controller
+
+              {/* Business Name <Controller
                 name="phone"
                 control={control}
                 rules={{ required: "Phone number is required" }}
@@ -138,7 +186,6 @@ const Contact = () => {
                   />
                 )}
               />*/}
-
             </div>
             <div>
               <label className="block font-medium text-gray-700 dark:text-gray-300">
@@ -152,7 +199,7 @@ const Contact = () => {
                 className="w-full p-2 border border-gray-300 rounded-md"
               />
             </div>
-          
+
             {/* Email Address */}
 
             {/* Type of Business */}
