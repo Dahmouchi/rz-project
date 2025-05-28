@@ -15,7 +15,7 @@ const About = () => {
           <div className="w-full h-[2px] bg-white lg:my-4 my-2"></div>
         </div>
         <div className="flex lg:flex-row flex-col lg:items-start lg:justify-between pb-6 lg:text-left text-center">
-          <div className="flex flex-col lg:gap-8 gap-6 lg:w-1/2 lg:text-lg text-sm ">
+          <div className="flex flex-col lg:gap-8 gap-6 lg:w-full text-center lg:text-lg text-sm ">
             <h1 className="text-second lg:text-5xl text-3xl">
               <span className="bg-gradient-to-r from-main3 to-gray-500 inline-block text-transparent bg-clip-text mr-2">
                 At{" "}

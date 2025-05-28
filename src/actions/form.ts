@@ -23,7 +23,7 @@ export async function createEmail(
 <body style="font-family: 'Plus Jakarta Sans', Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 0;">
   <div style="max-width: 640px; margin: 40px auto; background: white; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); overflow: hidden;">
     <!-- Gradient Header -->
-    <div style="background: linear-gradient(135deg, #3b82f6, #1d4ed8); padding: 32px 24px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #0a6b4e, #064E3B); padding: 32px 24px; text-align: center;">
       <div style="max-width: 180px; margin: 0 auto 16px;">
         <!-- Replace with your logo -->
         <div style="color: white; font-size: 24px; font-weight: 700;">RZ Hospitality</div>
@@ -33,7 +33,7 @@ export async function createEmail(
     
     <!-- Content -->
     <div style="padding: 40px;">
-      <p style="font-size: 16px; color: #4b5563; margin-bottom: 24px; line-height: 1.6;">Hello,</p>
+      <p style="font-size: 16px; color: #4b5563; margin-bottom: 24px; line-height: 1.6;">Hello Ryda,</p>
       <p style="font-size: 16px; color: #4b5563; margin-bottom: 32px; line-height: 1.6;">You've received a new service application request. Here are the details:</p>
       
       <!-- Details Card -->
@@ -92,7 +92,7 @@ export async function createEmail(
 </html>
       `;
     await sendEmail(
-      email, // Replace with your email
+      "23traderr@gmail.com", // Replace with your email
       `New Service Application: ${service}`,
       emailContentAnalyst,
     );

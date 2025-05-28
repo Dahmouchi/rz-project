@@ -11,44 +11,44 @@ const testimonials = [
   {
     id: 1,
     text: "RZ Hospitality transformed the way we operate. Their strategic insights and hands-on approach helped us optimize our revenue.",
-    name: "A. Benhaddou",
-    job: "General Manager, Luxury Boutique Hotel",
-    image: "/images/profile1.jpg",
+    name: "Chet",
+    job: "Hopper and bean",
+    image: "/images/profile-picture.png",
   },
   {
     id: 2,
     text: "From leadership training to operational restructuring, RZ Hospitality provided us with the expertise we needed to elevate our services.",
-    name: "S. El Mansouri",
-    job: "Director of Operations, 5-Star Resort",
-    image: "/images/profile2.jpg",
+    name: "Saleem ",
+    job: "The taco house",
+    image: "/images/profile-picture.png",
   },
   {
     id: 3,
     text: "The recruitment strategy designed by RZ Hospitality allowed us to build a high-performing team that truly reflects our brand values.",
-    name: "M. Tazi",
-    job: "HR Director, International Hotel Group",
-    image: "/images/profile3.jpg",
+    name: "Hugo ",
+    job: "Perk cafe",
+    image: "/images/profile-picture.png",
   },
   {
     id: 4,
     text: "RZ Hospitality helped us streamline our customer experience and enhance our service quality, leading to a significant increase in client satisfaction.",
-    name: "L. Rahmani",
-    job: "Guest Relations Manager, Luxury Resort",
-    image: "/images/profile4.jpg",
+    name: "Mohammed ",
+    job: "Cafe Lavista",
+    image: "/images/profile-picture.png",
   },
   {
     id: 5,
     text: "With RZ Hospitality’s expertise in revenue management, we were able to maximize our profits while maintaining exceptional service.",
-    name: "F. Idrissi",
-    job: "CFO, Exclusive Hotels & Resorts",
-    image: "/images/profile5.jpg",
+    name: "Cyrus",
+    job: "House waves",
+    image: "/images/profile-picture.png",
   },
   {
     id: 6,
     text: "Their strategic approach to digital transformation revolutionized the way we engage with guests, boosting our online presence and direct bookings.",
-    name: "N. Chafik",
-    job: "Marketing Director, Global Hospitality Group",
-    image: "/images/profile6.jpg",
+    name: "Shadi",
+    job: "Nika & store",
+    image: "/images/profile-picture.png",
   },
 ];
 
@@ -92,11 +92,11 @@ const Testimonials = () => {
                   <div className="bg-gradient-to-b from-text to-text2 rounded-lg p-4 pt-8">
                     <div className="flex flex-col aspect-square  gap-4 text-white justify-between">
                       <h1 className="text-lg">{service.text}</h1>
-                      <div className="flex gap-2 items-center">
+                      <div className="flex gap-4 items-center">
                         <div className="w-12 h-12 rounded-full bg-cover bg-center" style={{backgroundImage:`url(${service.image})`}}></div>
                         <div>
-                        <h1 className="line-clamp-1 text-black text-lg font-semibold">{service.name}</h1>
-                        <h1 className="text-xs text-slate-100">{service.job}</h1>
+                        <h1 className="line-clamp-1 text-black text-xl font-semibold">{service.name}</h1>
+                        <h1 className="text-md text-slate-100">{service.job}</h1>
                         </div>
                       </div>
                     </div>

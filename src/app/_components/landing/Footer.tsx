@@ -1,12 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 
 const Footer = () => {
   return (
     <div className=" ">
-        
-      <div className="bg-gradient-to-t relative from-main2 to-main text-white lg:pt-16 lg:px-16 px-4 py-4 bg-cover lg:bg-end">
-        
+      <div className="bg-gradient-to-t relative from-main2 to-main text-white lg:pt-16 lg:px-16 px-4 py-4 bg-cover lg:bg-end"> 
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
           <div className="flex flex-col justify-center lg:items-start items-center">
             <img src="/images/logo.png" alt="" className="w-1/2 h-auto" />
@@ -48,17 +47,6 @@ const Footer = () => {
               </h1>
             </div>
             <div className="flex flex-row gap-8">
-              <h1
-                className="text-white text-lg font-light cursor-pointer"
-                onClick={() => {
-                  const section = document.querySelector("#Gallery");
-                  if (section) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                gallery
-              </h1>
               <h1
                 className="text-white text-lg font-light cursor-pointer"
                 onClick={() => {
