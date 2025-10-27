@@ -92,7 +92,7 @@ export async function createEmail(
 </html>
       `;
     await sendEmail(
-      "23traderr@gmail.com", // Replace with your email
+      "RYDAZARHOUNI@gmail.com", // Replace with your email
       `New Service Application: ${service}`,
       emailContentAnalyst,
     );

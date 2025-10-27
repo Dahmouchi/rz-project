@@ -1,20 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use server"
-import nodemailer from 'nodemailer';
+"use server";
+
+import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
   host: "smtp-relay.sendinblue.com",
   port: 587,
   secure: false,
   auth: {
-    user: "info@betterbeuz.com",
-    pass: "LH75ENJBIaXpGP1W",
+    user: "97131b003@smtp-brevo.com",
+    pass: "57P0zFfwapSQZV2R",
   },
 });
 
 const sendEmail = async (to: any, subject: any, html: any) => {
   const mailOptions = {
-    from: "contact@betterbeuz.com",
+    from:"contact@build360.ma",
     to,
     subject,
     html,
